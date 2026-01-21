@@ -26,13 +26,21 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./examples/profile}
 \name{Lee}{Martin}
-\position{Senior Systems Engineer}
+\position{Staff Systems Engineer}
 %\address{}
 
 \mobile{(732) 575-7475}
 \email{lee@leemartin.us}
 \homepage{https://leemartin.us}
 \github{Aechrok}
+
+%-------------------------------------------------------------------------------
+% Adjust font sizes for better fit
+%-------------------------------------------------------------------------------
+\renewcommand*{\entrytitlestyle}[1]{{\fontsize{9.5pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\renewcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{graytext} #1}}
+\renewcommand*{\entrylocationstyle}[1]{{\fontsize{8.5pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
+\renewcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
 
 %-------------------------------------------------------------------------------
 \begin{document}
@@ -53,8 +61,11 @@
 %	CV/RESUME CONTENT
 %-------------------------------------------------------------------------------
 \input{src/resume/summary.tex}
+\vspace{2mm}
 \input{src/resume/experience.tex}
+\vspace{2mm}
 \input{src/resume/certs.tex}
+\vspace{2mm}
 \input{src/resume/education.tex}
 
 %-------------------------------------------------------------------------------
